@@ -1,10 +1,11 @@
-##NOTE FOR ENVIORNMENT VARIABLE
+<img width="1868" height="891" alt="Screenshot 2026-04-03 105827" src="https://github.com/user-attachments/assets/b1e983fc-ec93-4acb-a4b8-004bb84dc587" />##NOTE FOR ENVIORNMENT VARIABLE
+
 
 Due to security reasons the MongoDB slot is there in .env file but 
 url is not present. So for making if work anyone can use his or her own 
 MongoDB URL.
+The other requirements are given below.
 
- 
 #backend 
 #  Finance Dashboard API
 
@@ -116,12 +117,25 @@ http://localhost:5000
 
 ```
 POST /api/auth/register
-```
+
+user Register
+<img width="1912" height="724" alt="Screenshot 2026-04-03 105303" src="https://github.com/user-attachments/assets/4e8e00ad-092c-496c-bd46-6b939ae39fd5" />
+
+
+Admin register
+```<img width="1859" height="954" alt="Screenshot 2026-04-03 105652" src="https://github.com/user-attachments/assets/9204e292-c0fc-4fa4-a484-2486d9d2194a" />
+
 
 ### Login
 
 ```
 POST /api/auth/login
+
+```````
+
+Admin login
+[Uploading Screenshot 2026-04-03 105827.png…]()
+
 ```
 
 ---
@@ -131,25 +145,47 @@ POST /api/auth/login
 ### Get all users
 
 ```
+<img width="1905" height="986" alt="Screenshot 2026-04-03 110313" src="https://github.com/user-attachments/assets/686113d0-95f7-4317-9c3a-0d2c12bc4292" />
+
 GET /api/users
 ```
+<img width="1869" height="937" alt="Screenshot 2026-04-03 111700" src="https://github.com/user-attachments/assets/4266a447-e011-463a-a8e6-6f471a4689c2" />
 
 ### Get user by ID
 
 ```
 GET /api/users/:id
+<img width="1869" height="937" alt="Screenshot 2026-04-03 111700" src="https://github.com/user-attachments/assets/de34f994-d9e0-41fc-be46-aadde75ec05a" />
+
 ```
 
 ### Update role
 
 ```
 PUT /api/users/:id/role
+// before updation
+<img width="1842" height="909" alt="image" src="https://github.com/user-attachments/assets/7a436432-2733-49ba-ac88-711c3ded4fdd" />
+
+// after updation
+<img width="1855" height="997" alt="image" src="https://github.com/user-attachments/assets/b35f2f03-0222-4c30-9f2a-6bc25e7cf09a" />
+
+
 ```
 
 ### Update status
 
+
+
+
 ```
 PUT /api/users/:id/status
+
+before
+<img width="1847" height="918" alt="image" src="https://github.com/user-attachments/assets/8de1e564-77f5-4246-8996-a36cf34edeea" />
+
+after
+<img width="1868" height="947" alt="image" src="https://github.com/user-attachments/assets/f87cefec-76d3-47ce-9823-08fba167e842" />
+
 ```
 
 ### Delete user
@@ -166,30 +202,44 @@ DELETE /api/users/:id
 
 ```
 POST /api/records
+
+<img width="1866" height="950" alt="image" src="https://github.com/user-attachments/assets/4279fe69-783e-4993-accd-a35f3ad14727" />
+
 ```
 
-### Get all records (with filters & pagination)
+### Get all records
+<img width="1859" height="966" alt="image" src="https://github.com/user-attachments/assets/aeb5bc66-c18f-43e0-8cdc-69658358a099" />
 
 ```
-GET /api/records?page=1&limit=10&type=income&category=food
+ (with filters & pagination)
+GET /api/records?page=1&limit=1
+<img width="1849" height="934" alt="image" src="https://github.com/user-attachments/assets/ba552df5-15d9-41a3-b55e-18b67f641d01" />
+
 ```
 
 ### Get record by ID
 
 ```
 GET /api/records/:id
+<img width="1852" height="973" alt="image" src="https://github.com/user-attachments/assets/3a34e58c-5e40-4386-8bff-43001c38e3f9" />
+
 ```
 
 ### Update record
 
 ```
 PATCH /api/records/:id
+<img width="1666" height="966" alt="image" src="https://github.com/user-attachments/assets/1e85dd96-af0e-4db1-a7ef-df55c5f3f40e" />
+
 ```
 
 ### Delete record (soft delete)
 
 ```
 DELETE /api/records/:id
+<img width="1696" height="859" alt="image" src="https://github.com/user-attachments/assets/c2465317-7543-4a84-b0be-d19cf05a0c7a" />
+
+
 ```
 
 ---
@@ -198,8 +248,11 @@ DELETE /api/records/:id
 
 ### Get summary
 
+
 ```
 GET /api/dashboard/summary
+<img width="1630" height="944" alt="image" src="https://github.com/user-attachments/assets/1e12826c-1258-4342-a1e0-4c23ec7f1416" />
+
 ```
 
 ### Returns:
