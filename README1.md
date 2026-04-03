@@ -1,11 +1,3 @@
-##NOTE FOR ENVIORNMENT VARIABLE
-
-
-Due to security reasons the MongoDB slot is there in .env file but 
-url is not present. So for making if work anyone can use his or her own 
-MongoDB URL.
-The other requirements are given below.
-
 #backend 
 #  Finance Dashboard API
 
